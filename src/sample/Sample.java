@@ -6,7 +6,7 @@ public class Sample {
 
 	public static void main(String[] args) {
 		while(true) {
-			System.out.print("入力をどう：");
+			System.out.print("入力をどうg：");
 			// TODO 自動生成されたメソッド・スタブ
 			Scanner scanner = new Scanner(System.in);
 			String name = scanner.nextLine();
