@@ -1,24 +1,14 @@
 package sample;
 
-import java.util.Scanner;
-
 public class Sample {
 
 	public static void main(String[] args) {
-		while(true) {
-			System.out.print("入力をどうg：");
-			// TODO 自動生成されたメソッド・スタブ
-			Scanner scanner = new Scanner(System.in);
-			String name = scanner.nextLine();
-			if(!name.matches("^[0-9a-zA-Z]+$")) {
-				System.out.println("半角英数字でない");
-			}else {
-				System.out.println("半角英数字");
-			}
-		}
+		double weight = 60;
+		double height = 1.7;
+		double BMI = weight / height / height;
+		System.out.println("BMIは" + BMI + "です");
+		System.out.println("BMIは" + Math.floor(BMI) + "です");
+		System.out.println("BMIは" + Math.ceil(BMI) + "です");
+		System.out.println("BMIは" + ((double) Math.round(BMI * 10)) / 10 + "です");
 	}
-	public static int a() {
-		return 0;
-	}
-
 }
